@@ -1,0 +1,46 @@
+#categorie-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: auto;
+
+}
+
+#categorie-card {
+    margin: auto;
+    padding: 25px 0px;
+    cursor: pointer;
+}
+
+#categorie-card:hover > #categorie-image-box > #categorie-card-img {
+    transition: 0.8;
+    width: 270px;
+}
+#mask {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    background-color: #d10023e5;
+    clip-path: polygon(0 0, 100% 0, 31% 100%, 0% 100%);
+}
+
+#categorie-image-box {
+    background-color: #E4E7ED;
+    width: 350px;
+    height: 250px;
+    overflow:hidden
+
+}
+
+#categorie-card-text {
+    color: white;
+}
+
+#categorie-card-img {
+    display: block;
+    margin: auto;
+    width: 250px;
+    transition: width 0.3s;
+
+}
+

@@ -1,0 +1,144 @@
+#product-text-box {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+#categorie-list {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    
+}
+
+#categorie-list > li {
+    margin: 0 15px;
+    cursor: pointer;
+
+}
+
+#categorie-list > li:hover {
+  color:#D10024 ;
+}
+
+#categorie-list > li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #EF233C;
+  transition: width .3s;
+}
+
+#categorie-list> li:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.itens {
+  max-width: 62vw;
+  margin: auto;
+}
+
+#itens-container {
+  margin-top: 30px;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+#itens-container::-webkit-scrollbar {
+  display: none;
+}
+
+#product-image {
+  display: block;
+  width: 245px;
+  height: 12.8vw;
+  margin: auto;
+  margin: 10px;
+  background-color: white;
+ 
+}
+
+#card-text-box {
+  text-align: center;
+}
+
+#card-price {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+  padding-bottom: 20px;
+}
+
+.product-name {
+ 
+  margin: 5px;
+  height: fit-content;
+}
+
+#card-icons {
+  height: 80px;
+}
+
+#item-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 15px 15px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151); */
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.068);
+}
+
+#item-card:hover {
+  border: 2px solid #EF233C;
+}
+
+#item-card > a > h2 {
+  font-size: 1.3vw;
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+
+}
+
+.item-buttons {
+  text-align: right;
+  padding: 0 35px;
+}
+
+.arrow-icons {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  text-align: center;
+  margin: 0 3px;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151);
+  background-color: white;
+  cursor: pointer;
+}
+
+.arrow-icons:hover {
+  color: rgb(255, 255, 255);
+  background-color: #D21737; 
+}
+
+@media screen and (max-width: 1300px)
+{
+  #product-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .itens {
+    max-width: 73vw;
+    margin: auto;
+  }
+
+}

@@ -1,0 +1,22 @@
+#newsletter-container {
+
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    border-top: 2px solid rgba(0, 0, 0, 0.096);
+}
+
+#newsletter-text-box {
+    margin: auto;
+    width: fit-content;
+}
+
+#email-input-box {
+    margin: auto;
+    width: fit-content;
+}
+
+#social-icons-box {
+    margin: auto;
+    width: fit-content;
+}
