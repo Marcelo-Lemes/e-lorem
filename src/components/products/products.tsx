@@ -8,18 +8,17 @@ export default function Products() {
   const carrousel = useRef<HTMLDivElement>(null);
 
   const handleLeftClick = () : void => {
-    const card = document.getElementById('item-card')
+    const card : HTMLElement | null = document.getElementById('item-card');
     if (carrousel.current && card ) {
       carrousel.current.scrollLeft -= (card?.offsetWidth + 34);
     }
   }
 
   const handleRightClick = () : void => {
-    const card = document.getElementById('item-card')
+    const card : HTMLElement | null = document.getElementById('item-card');
     if (carrousel.current && card) {
       carrousel.current.scrollLeft += (card.offsetWidth + 34);
     }
-
   }
 
   return (

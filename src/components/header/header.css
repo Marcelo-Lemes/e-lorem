@@ -3,13 +3,88 @@
     padding: 0;
     height: fit-content;
     overflow: hidden;
+    width: 100%;
+    
+}
+
+#search-mask {
+    background-color: #15161D;
+    border-bottom: 3px solid #D10024;
+    width: 100%;
 }
 
 #search-box {
-    background-color: #15161D;
-    width: 100vw;
-    height: 200px;
-    border-bottom: 3px solid #D10024;
+    margin: auto;
+    width: 1150px;
+    height: 120px;
+
+
+}
+
+#search-content {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#search-content > h2 {
+    margin: auto 0;
+}
+
+#search-bar {
+    margin: auto;
+}
+
+#search-bar > input {
+    width: 280px;
+    height: 35px;
+    background-color: white;
+    border-style: solid;
+    padding-left: 15px;
+    border-color: rgba(0, 0, 0, 0.096);
+    z-index: 10;
+}
+
+#search-bar > button {
+    width: 100px;
+    height: 41px;
+    background-color: #D31737;
+    color: white;
+    border: 1px solid #D31737;
+    border-radius: 0 15px 15px 0px;
+    margin-top: -1px;
+    cursor: pointer;
+}
+
+#search-bar > select {
+    color: rgba(0, 0, 0, 0.651);
+    width: 140px;
+    height: 39px;
+    background-color: white;
+    border-radius: 15px 0px 0px 15px;
+    margin-bottom: -1px;
+    text-align: center;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.096);
+}
+
+#nav-icons-box {
+    display: flex;
+    margin: auto 0;
+    text-align: center;
+}
+
+.nav-icons {
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#menu-icon {
+    display: none;
 }
 
 #nav-bar {
@@ -19,12 +94,11 @@
 }
 
 #nav-bar > ul {
-    margin-left: 5vw;
-    width: 80vw;
+    width: 62.5vw;
     display: flex;
     flex-direction: row;
     list-style: none;
-
+    margin: auto;
     cursor: pointer;   
 }
 
@@ -48,4 +122,49 @@
 #nav-bar > ul > li:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+@media screen and (max-width: 1300px)
+{
+    #search-box {
+        display: flex;
+        margin: auto;
+        height: fit-content;
+        width: fit-content;
+        padding: 15px 0px;
+    }
+
+    #search-content {
+        flex-direction: column;
+        width: 72vw;
+        justify-content: center;
+
+    }
+
+    #search-content > h2 {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #search-bar > input {
+        width: 40vw;
+    }
+
+    #nav-icons-box {
+        margin: auto;
+        margin-right: 0;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    #account-icon {
+        display: none;
+ 
+    }
+
+    #menu-icon {
+        display: block;
+    }
 }

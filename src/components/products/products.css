@@ -1,15 +1,22 @@
 #product-text-box {
     display: flex;
-    width: 80vw;
+    width: 61vw;
     margin: auto;
     margin-top: 30px;
 
 }
 
+#product-text-box > div > h2 {
+  margin-left: 12px;
+  width: 15vw;
+}
+
 #categorie-list {
+    width: 100%;
     display: flex;
     list-style: none;
     margin: auto;
+    justify-content:end;
     
 }
 
@@ -122,6 +129,7 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151);
   background-color: white;
   cursor: pointer;
+  user-select:none
 }
 
 .arrow-icons:hover {
@@ -131,6 +139,14 @@
 
 @media screen and (max-width: 1300px)
 {
+  #product-text-box {
+    width: 72vw;
+  }
+
+  #product-text-box > div > h2 {
+    width: 20vw;
+  }
+
   #product-image {
     width: 300px;
     height: auto;

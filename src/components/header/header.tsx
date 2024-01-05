@@ -1,22 +1,47 @@
+import { IoMdHeartEmpty } from "react-icons/io";
+import { IoMenu } from "react-icons/io5";
+import { FaShoppingCart, FaUser  } from "react-icons/fa";
 import './header.css';
 
 export default function Header() {
   return (
     <div id='header'>
+      <div id="search-mask">
         <div id='search-box'>
-
-          <h2 style={{color: 'white', paddingTop: '50px', fontSize: '50px'}}>E-Lorem</h2>
-          <div id='search-bar'>
-            <select name="categorie" id="">
-              <option value="Categoria1">Categoria 1</option>
-              <option value="Categoria2">Categoria 2</option>
-              <option value="Categoria3">Categoria 3</option>
-              <option value="Categoria4">Categoria 4</option>
-            </select>
-            <input type="text" />
-            <button>Search</button>
+          <div id='search-content'>
+            <h2 style={{color: 'white', fontSize: '50px'}}>E-Lorem</h2>
+            <div id='search-bar'>
+              <select name="categorie" id="">
+                <option value="Categoria1">Todas</option>
+                <option value="Categoria2">Computadores</option>
+                <option value="Categoria3">Celulares</option>
+                <option value="Categoria4">Câmeras</option>
+                <option value="Categoria4">Acessórios</option>
+              </select>
+              <input type="text" />
+              <button>Search</button>
+            </div>
+            <div id='nav-icons-box'>
+              <div className="nav-icons">
+                <IoMdHeartEmpty />
+                <p style={{fontSize: '15px', marginTop: '-5px'}}>Favoritos</p>
+              </div>
+              <div className="nav-icons">
+                <FaShoppingCart />
+                <p style={{fontSize: '15px', marginTop: '-5px'}}>Carrinho</p>
+              </div>
+              <div id="account-icon" className="nav-icons">
+                <FaUser />
+                <p style={{fontSize: '15px', marginTop: '-5px'}}>Minha Conta</p>
+              </div>
+              <div id="menu-icon" className="nav-icons">
+                <IoMenu />
+                <p style={{fontSize: '15px', marginTop: '-5px'}}>Menu</p>
+              </div>
+            </div>
           </div>
-          <div id='nav-icons'></div>
+      </div>
+
         </div>
         <div id='nav-bar'>
             <ul>

@@ -10,7 +10,7 @@ export default function Categories() {
             <div id='categorie-card'>
                 <div id='mask'>
                   <div id='categorie-card-text'>
-                      <h3>{`Coleção de ${categorie.categoria}`}</h3>
+                      <h3 id='categorie-name'>{categorie.categoria}</h3>
                       <p>Compre agora</p>
                   </div>
                 </div>
