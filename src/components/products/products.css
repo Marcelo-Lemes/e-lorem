@@ -1,6 +1,10 @@
+#products-box {
+  height: 650px;
+}
+
 #product-text-box {
     display: flex;
-    width: 61vw;
+    width: 1200px;
     margin: auto;
     margin-top: 30px;
 
@@ -12,16 +16,18 @@
 }
 
 #categorie-list {
-    width: 100%;
-    display: flex;
-    list-style: none;
-    margin: auto;
-    justify-content:end;
+
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: auto;
+  justify-content:end;
     
 }
 
 #categorie-list > li {
     margin: 0 15px;
+
     cursor: pointer;
 
 }
@@ -39,14 +45,24 @@
   transition: width .3s;
 }
 
-#categorie-list> li:hover::after {
+#categorie-list > li:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.active {
+  color: #D10024;
+}
+
+#categorie-list > .active::after {
   width: 100%;
   transition: width .3s;
 }
 
 .itens {
-  max-width: 62vw;
+  width: 1200px;
   margin: auto;
+
 }
 
 #itens-container {
@@ -63,7 +79,7 @@
 #product-image {
   display: block;
   width: 245px;
-  height: 12.8vw;
+  height: 250px;
   margin: auto;
   margin: 10px;
   background-color: white;
@@ -74,7 +90,7 @@
   text-align: center;
 }
 
-#card-price {
+.card-price {
   border-bottom: 1px solid rgba(0, 0, 0, 0.212);
   padding-bottom: 20px;
 }
@@ -89,18 +105,23 @@
   height: 80px;
 }
 
-#item-card {
+#item-card-box {
   width: 100%;
-  height: 100%;
+  height: max-content;
   object-fit: cover;
   margin: 15px 15px;
-  background-color: rgb(255, 255, 255);
   /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151); */
   cursor: pointer;
+
+}
+
+#item-card {
+
+  background-color: rgb(255, 255, 255);
   border: 2px solid rgba(0, 0, 0, 0.068);
 }
 
-#item-card:hover {
+#item-card-box:hover > #item-card {
   border: 2px solid #EF233C;
 }
 
@@ -115,21 +136,23 @@
 }
 
 .item-buttons {
+  position: relative;
   text-align: right;
   padding: 0 35px;
+
 }
 
 .arrow-icons {
   color: rgb(0, 0, 0);
   font-size: 15px;
-  text-align: center;
   margin: 0 3px;
   padding: 5px;
   border-radius: 50%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.151);
   background-color: white;
   cursor: pointer;
-  user-select:none
+  user-select:none;
+  
 }
 
 .arrow-icons:hover {
@@ -137,10 +160,97 @@
   background-color: #D21737; 
 }
 
+#card-icons-box {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+
+}
+
+.card-icons {
+  margin: 25px;
+  transition: 0.2s;
+}
+
+.card-icons:hover {
+  color: #D10024;
+  background-color: #E5E6EB;
+  border-radius: 50%;
+}
+
+#hidden-cart-box {
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  opacity: 0;
+  height: 0px;
+  width: 264px;
+  text-align: center;
+  margin-top: -2px;
+  background-color: black;
+  transition: 0.2s;
+}
+
+#hidden-cart-box > button {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 30px;
+  width: 170px;
+  color: white;
+  border: none;
+  height: 0px;
+  border: 2px solid #EF233C;
+  background-color: #EF233C;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+
+}
+
+#hidden-cart-box > button:hover {
+  background-color: white;
+  width: 190px;
+  color: #D10024;
+}
+
+#button-icon {
+  font-size: 0px;
+  transition: 0.2s;
+}
+
+#hidden-cart-box > button:hover > #button-icon {
+  color: #D10024;
+  width: fit-content;
+  font-size: 16px;
+  margin-right: 15px;
+
+
+  
+}
+
+#item-card-box:hover > #hidden-cart-box {
+  opacity: 1;
+  height: 70px;
+}
+
+#item-card-box:hover > #hidden-cart-box > button {
+  height: 45px;
+
+}
+
 @media screen and (max-width: 1300px)
 {
+  #products-box {
+    height: 650px;
+  }
+
   #product-text-box {
-    width: 72vw;
+    width: 850px;
   }
 
   #product-text-box > div > h2 {
@@ -148,13 +258,28 @@
   }
 
   #product-image {
-    width: 300px;
+    width: 228px;
     height: auto;
   }
 
+  #hidden-cart-box {
+    width: 248px;
+  }
+
   .itens {
-    max-width: 73vw;
+    width: 850px;
     margin: auto;
+  }
+
+  #hidden-cart-box > button {
+    padding-top: 13px;
+    padding-left: 32px;
+    width: 160px;
+    font-size: 14px;
+  }
+
+  #hidden-cart-box > button:hover {
+    width: 190px;
   }
 
 }

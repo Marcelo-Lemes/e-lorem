@@ -13,22 +13,22 @@ type product = {
 
 export const categorieItems : Array<categorie> = [
     {
-        categoria: 'lorem 1',
+        categoria: 'Computadores',
         img: 'pc.png',
         items: [],
     },
     {
-        categoria: 'lorem 2',
+        categoria: 'Celulares',
         img: 'pc.png',
         items: [],
     },
     {
-        categoria: 'lorem 3',
+        categoria: 'Câmeras',
         img: 'pc.png',
         items: [],
     },
     {
-        categoria: 'lorem 4',
+        categoria: 'Acessórios',
         img: 'pc.png',
         items: [],
     }
@@ -44,7 +44,7 @@ export const newProducts : Array<product> = [
     {
         name : 'Produto 2',
         categorie : 'Categoria',
-        img : 'pc.png',
+        img : 'celular.png',
         price : 2000,
     },
     {
@@ -56,7 +56,7 @@ export const newProducts : Array<product> = [
     {
         name : 'Produto 4',
         categorie : 'Categoria',
-        img : 'pc.png',
+        img : 'celular.png',
         price : 2000,
     },
     {
@@ -68,7 +68,19 @@ export const newProducts : Array<product> = [
     {
         name : 'Produto 6',
         categorie : 'Categoria',
+        img : 'celular.png',
+        price : 2000,
+    },
+    {
+        name : 'Produto 7',
+        categorie : 'Categoria',
         img : 'pc.png',
+        price : 2000,
+    },
+    {
+        name : 'Produto 8',
+        categorie : 'Categoria',
+        img : 'celular.png',
         price : 2000,
     }
 ]

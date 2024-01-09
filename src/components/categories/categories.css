@@ -1,8 +1,10 @@
 #categorie-box {
     display: flex;
     flex-wrap: wrap;
-    width: 62vw;
+    width: 1200px;
     margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
 
 }
 
@@ -10,6 +12,7 @@
     margin: auto;
     padding: 25px 0px;
     cursor: pointer;
+
 }
 
 #categorie-card:hover > #categorie-image-box > #categorie-card-img {
@@ -18,23 +21,28 @@
 }
 #mask {
     position: absolute;
-    width: 18vw;
+    width: 350px;
     height: 250px;
     background-color: #d10023e5;
+    box-shadow: 1px 1px 1px rgba(255, 0, 0, 0.267);
     clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
 }
 
 #categorie-image-box {
     background-color: #E4E7ED;
-    width: 29vw;
+    width: 550px;
     height: 250px;
-    overflow:hidden
+    overflow:hidden;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.205);
 
 }
 
 #categorie-card-text {
     color: white;
-    width: 40%;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 50%;
 }
 
 #categorie-name {
@@ -54,14 +62,17 @@
 @media screen and (max-width: 1300px)
 {
     #categorie-box {
-        width: 72vw;
+        width: 900px;
     }
 
     #categorie-image-box {
-        width: 34vw;
+        width: 400px;
     }
 
     #mask {
-        width: 25vw;
+        width: 280px;
+    }
+    #categorie-card-text {
+        width: 60%;
     }
 }

@@ -28,7 +28,7 @@
     height: 35px;
     margin-top: 20px;
     margin-left: -60px;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
     background-color: white;
     border-style: solid;
     padding-left: 10px;
@@ -48,7 +48,7 @@
     background-color: #D31737;
     color: white;
     border: 1px solid #D31737;
-    border-radius: 0 15px 15px 0px;
+    border-radius: 0 20px 20px 0px;
     margin-top: -1px;
     cursor: pointer;
 }
