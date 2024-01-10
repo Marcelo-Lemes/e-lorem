@@ -43,6 +43,8 @@
     margin-top: 50px;
     margin-left: 20px;
     width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
 }
 
 #categorie-name {
@@ -75,4 +77,53 @@
     #categorie-card-text {
         width: 60%;
     }
+}
+
+@media screen and (max-width: 900px)
+{
+    #categorie-box {
+        width: 750px;
+    }
+    
+
+    #categorie-image-box {
+        width: 320px;
+    }
+
+    #categorie-card-img {
+        width: 250px;
+        margin: auto;
+
+    }
+
+    #categorie-card:hover > #categorie-image-box > #categorie-card-img {
+        transition: 0.8;
+        width: 270px;
+    }
+
+    #mask {
+        width: 250px;
+    }
+
+    #categorie-card-text {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 750px)
+{   
+    #categorie-box {
+        width: 90vw;
+    }
+
+    #mask {
+        width: 55vw;
+    }
+
+    #categorie-image-box {
+        width: 90vw;
+    }
+
+    
+
 }

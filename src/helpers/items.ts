@@ -4,7 +4,7 @@ type categorie = {
     items : object[],
 }
 
-type product = {
+export type product = {
     name : string,
     categorie : string,
     img : string,
@@ -19,68 +19,201 @@ export const categorieItems : Array<categorie> = [
     },
     {
         categoria: 'Celulares',
-        img: 'pc.png',
+        img: 'celular-3.png',
         items: [],
     },
     {
         categoria: 'Câmeras',
-        img: 'pc.png',
+        img: 'cam-3.png',
         items: [],
     },
     {
         categoria: 'Acessórios',
-        img: 'pc.png',
+        img: 'acc-5.png',
         items: [],
+    }
+]
+
+export const computadores : Array<product> = [
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'pc.png',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'pc-3.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'pc-2.jpg',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'pc-4.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'pc-5.webp',
+        price : 999,
+    }
+]
+
+export const celulares : Array<product> = [
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular-galaxy-s21.png',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular-3.png',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular-4.jfif',
+
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular-4a.jpg',
+        price : 999,
+    }
+]
+
+export const cameras : Array<product> = [
+    {
+        name : 'Nome do Produto',
+        categorie : 'Categoria',
+        img : 'cam-1.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'cam-2.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'cam-3.png',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'cam-4.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'cam-5.webp',
+        price : 999,
+    }
+]
+
+export const acessorios : Array<product> = [
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'acc-1.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'acc-2.png',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'acc-3.jpg',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'acc-4.jfif',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'acc-5.png',
+        price : 999,
     }
 ]
 
 export const newProducts : Array<product> = [
     {
-        name : 'Produto 1',
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular-4.jfif',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'acc-5.png',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'pc-4.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
+        categorie : 'Categoria',
+        img : 'celular.webp',
+        price : 999,
+    },
+    {
+        name : 'Nome  do Produto',
         categorie : 'Categoria',
         img : 'pc.png',
-        price : 2000,
+        price : 999,
     },
     {
-        name : 'Produto 2',
+        name : 'Nome  do Produto',
         categorie : 'Categoria',
-        img : 'celular.png',
-        price : 2000,
+        img : 'cam-2.webp',
+        price : 999,
     },
     {
-        name : 'Produto 3',
+        name : 'Nome  do Produto',
         categorie : 'Categoria',
-        img : 'pc.png',
-        price : 2000,
+        img : 'acc-2.png',
+        price : 999,
     },
     {
-        name : 'Produto 4',
+        name : 'Nome  do Produto',
         categorie : 'Categoria',
-        img : 'celular.png',
-        price : 2000,
-    },
-    {
-        name : 'Produto 5',
-        categorie : 'Categoria',
-        img : 'pc.png',
-        price : 2000,
-    },
-    {
-        name : 'Produto 6',
-        categorie : 'Categoria',
-        img : 'celular.png',
-        price : 2000,
-    },
-    {
-        name : 'Produto 7',
-        categorie : 'Categoria',
-        img : 'pc.png',
-        price : 2000,
-    },
-    {
-        name : 'Produto 8',
-        categorie : 'Categoria',
-        img : 'celular.png',
-        price : 2000,
+        img : 'cam-3.png',
+        price : 999,
     }
 ]

@@ -10,6 +10,7 @@
 
 #banner-center-box {
     padding: 0 80px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #banner-box {
@@ -40,19 +41,26 @@
 .dot > h3, p {
     margin: auto;
     text-align: center;
+    font-weight: 300;
     
 }
 
 .dot > h3 {
     font-size: 25px;
     margin-top: 25px;
+    font-weight: black;
 
 }
 
 #banner-text-box {
     width: 100%;
     margin: auto;
+    margin-top: 30px;
     text-align: center;
+}
+
+#banner-text-box > h2 {
+    font-weight: 400;
 }
 
 #banner-text-box > button {
@@ -63,7 +71,7 @@
     padding: 5px;
     border: 1px solid #D31737;
     border-radius: 30px;
-    font-size: 19px;
+    font-size: 14px;
     margin-top: 25px;
     font-weight: bold;
     cursor: pointer;

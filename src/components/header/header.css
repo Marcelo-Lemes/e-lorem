@@ -31,6 +31,7 @@
 
 #search-content > h2 {
     margin: auto 0;
+    
 }
 
 #search-bar {
@@ -45,6 +46,8 @@
     padding-left: 15px;
     border-color: rgba(0, 0, 0, 0.096);
     z-index: 10;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #search-bar > button {
@@ -56,6 +59,10 @@
     border-radius: 0 20px 20px 0px;
     margin-top: -1px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 13px;
 }
 
 #search-bar > select {
@@ -68,12 +75,16 @@
     text-align: center;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.096);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
 }
+
 
 #nav-icons-box {
     display: flex;
     margin: auto 0;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav-icons {
@@ -99,11 +110,13 @@
     flex-direction: row;
     list-style: none;
     margin: auto;
-    cursor: pointer;   
+    cursor: pointer;  
+    font-family: 'Montserrat', sans-serif; 
 }
 
 #nav-bar > ul > li {
     margin: 0 20px;
+    
 }
 
 #nav-bar > ul > li:hover {

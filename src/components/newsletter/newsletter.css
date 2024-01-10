@@ -9,6 +9,8 @@
     display: flex;
     margin: 30px auto 0px ;
     width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 
 }
 
@@ -25,6 +27,7 @@
 #email-input-box > input {
     position: relative;
     width: 400px;
+    font-family: 'Montserrat', sans-serif;
     height: 35px;
     margin-top: 20px;
     margin-left: -60px;
@@ -45,6 +48,8 @@
 #email-input-box > button {
     width: 150px;
     height: 39px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     background-color: #D31737;
     color: white;
     border: 1px solid #D31737;
