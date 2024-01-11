@@ -129,6 +129,7 @@
 #item-card {
   background-color: rgb(255, 255, 255);
   border: 2px solid rgba(0, 0, 0, 0.068);
+  user-select:none;
 }
 
 #item-card-box:hover > #item-card {
@@ -453,7 +454,8 @@
   }
 
   #categorie-list {
-    margin-left: 10px !important;
+    width: 100vw;
+    margin-left: 5px !important;
   }
 
   #categorie-list > li {
