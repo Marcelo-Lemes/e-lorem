@@ -6,7 +6,6 @@ import './header.css';
 
 export default function Header() {
   const [menu, setMenu] = useState(false)
-
   return (
     <header id='header'>
       <div id="search-mask">
@@ -23,7 +22,7 @@ export default function Header() {
                 <option value="Categoria4">Acessórios</option>
               </select>
               <input type="text" placeholder="Pesquise aqui" />
-              <button><FaSearch id='search-icon' /><p>Pesquisar</p></button>
+              <button aria-label="search button"><FaSearch id='search-icon' /><p>Pesquisar</p></button>
             </div>
             <div id='nav-icons-box'>
               <div className="nav-icons">

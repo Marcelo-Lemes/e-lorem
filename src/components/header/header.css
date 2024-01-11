@@ -50,7 +50,7 @@
 }
 
 #search-bar > input {
-    width: 280px;
+    width: 350px;
     height: 35px;
     background-color: white;
     border-style: solid;
@@ -104,7 +104,7 @@
 }
 
 .nav-icons {
-    padding: 20px;
+    padding: 15px 10px 10px;
     color: rgb(199, 199, 199);
     font-size: 22px;
     cursor: pointer;
@@ -276,7 +276,7 @@
 
     #nav-icons-box {
         margin: auto;
-        margin-right: 0;
+        margin-right: 25px;
     }
 
     #nav-bar {
