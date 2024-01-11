@@ -1,6 +1,6 @@
 import { IoMdMail } from "react-icons/io";
 import { GoMail } from "react-icons/go";
-import { FaFacebookF, FaTwitter, FaInstagram, FaPinterest } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import './newsletter.css';
 
 export default function Newsletter() {
@@ -25,9 +25,6 @@ export default function Newsletter() {
           </button>
           <button className="icon-button">
             <FaInstagram />
-          </button>
-          <button className="icon-button">
-            <FaPinterest />
           </button>
         </div>
     </div>

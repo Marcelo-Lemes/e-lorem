@@ -72,7 +72,7 @@ export default function Banner() {
           <button>Compre Agora</button>
           </div>
         </div>
-        <img id='banner-img-right' className='banner-img' src="pc.png" alt="" />
+        <img id='banner-img-right' className='banner-img' src="celular-3.png" alt="" />
       </div>
     </div>
   )

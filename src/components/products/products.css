@@ -258,6 +258,7 @@
 }
 
 #hidden-cart-box > button > p {
+  margin-top: auto;
  margin-left: 0;
  margin-right: auto;
 }
@@ -433,6 +434,10 @@
   #hidden-cart-box > button {
     width: 50vw;
     font-size: 3.5vw;
+  }
+
+  #hidden-cart-box > button > p {
+    margin-top: auto;
   }
 
 

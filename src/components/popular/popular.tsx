@@ -3,9 +3,7 @@ import { TbArrowRight } from 'react-icons/tb';
 import { useEffect, useRef, useState } from 'react';
 import { acessorios, cameras, celulares, computadores, newProducts, product } from '../../helpers/items';
 import '../products/products.css';
-import { CiHeart } from 'react-icons/ci';
-import { LuArrowRightLeft } from 'react-icons/lu';
-import { FaRegEye, FaShoppingCart } from 'react-icons/fa';
+import Card from '../card/card';
 
 export default function Popular() {
   const [categorie, setCategorie] = useState('')
@@ -72,30 +70,7 @@ export default function Popular() {
         {list
           .map((product, i) => {
             return (
-              <div id='item-card-box' key={i + 1}>
-                <div id='item-card' >
-                  <img id='product-image' src={product.img} alt={product.name} />
-                  <div id='card-text-box'>
-                    <p>Categoria</p>
-                    <h2 className='product-name'>{product.name}</h2>
-                    <p className='card-price'>R$ {product.price.toFixed(2)}</p>
-                  </div>
-                  <div id='card-icons-box'>
-                    <div className='icon-box'>
-                      <CiHeart className='card-icons' style={{ padding: '10px', margin: '5px'}} />
-                    </div>
-                    <div className='icon-box'>
-                      <LuArrowRightLeft className='card-icons' style={{ padding: '10px', margin: '5px'}} />
-                    </div>
-                    <div className='icon-box'>
-                      <FaRegEye className='card-icons' style={{ padding: '10px', margin: '5px'}} />
-                    </div>
-                  </div>
-                </div>
-                  <div id='hidden-cart-box'>  
-                  <button><FaShoppingCart id='button-icon' /><p>+ CARRINHO</p></button>
-                  </div>
-              </div>
+              <Card image={product.img} name={product.name} price={product.price} i={i} />
             )
         })}
       </div>

@@ -77,9 +77,53 @@
     cursor: pointer;
 }
 
+#banner-text-box > button:hover {
+    background-color: #000000e0;
+    color: #fffcfc;
+    border: 1px solid #000000e0;
+}
+
 .banner-img {
     position: relative;
     width: 400px;
     height: auto;
     user-select:none
+}
+
+@media screen and (max-width: 500px)
+{
+    #banner-text-box > h2 {
+        font-size: 24px;
+    }
+
+    #banner-text-box > h1 {
+        font-size: 30px;
+    }
+
+    .dot {
+        width: 70px;
+        height: 70px;
+    }
+
+    .dot > h3, p {
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 300;
+        
+    }
+
+    .dot > h3 {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .dot > p {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    #banner-text-box > h1 {
+        margin-bottom: 10px;
+    }
 }

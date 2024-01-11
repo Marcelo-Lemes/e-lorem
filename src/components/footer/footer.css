@@ -82,3 +82,20 @@
     }
     
 }
+
+@media screen and (max-width: 500px)
+{
+
+    #footer-container {
+        margin: auto;
+        width: 80vw;
+
+    }
+
+    .footer-text-box {
+        width: 60vw;
+        margin: auto;
+
+        
+    }
+}

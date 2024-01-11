@@ -12,7 +12,7 @@ export default function Categories() {
                 <div id='mask'>
                   <div id='categorie-card-text'>
                       <h3 id='categorie-name'>{categorie.categoria}</h3>
-                      <p  style={{fontSize: '20px', textAlign:'left', margin: '15px 0px'}}>Compre agora <HiArrowRightCircle style={{fontSize: '20px', marginBottom: '-5px'}} /></p>
+                      <p  style={{textAlign:'left', margin: '15px 0px 15px px'}}>Compre agora <HiArrowRightCircle style={{fontSize: '20px', marginBottom: '-5px'}} /></p>
                   </div>
                 </div>
                 <div id='categorie-image-box'>

@@ -26,6 +26,7 @@
     background-color: #d10023e5;
     box-shadow: 1px 1px 1px rgba(255, 0, 0, 0.267);
     clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
+    z-index: 0;
 }
 
 #categorie-image-box {
@@ -67,6 +68,10 @@
         width: 900px;
     }
 
+    #categorie-name {
+        font-size: 25px;
+    }
+
     #categorie-image-box {
         width: 400px;
     }
@@ -81,6 +86,11 @@
 
 @media screen and (max-width: 900px)
 {
+    
+    #categorie-name {
+        font-size: 23px;
+    }
+
     #categorie-box {
         width: 750px;
     }
@@ -116,6 +126,10 @@
         width: 90vw;
     }
 
+    #categorie-name {
+        font-size: 25px;
+    }
+
     #mask {
         width: 55vw;
     }
@@ -124,6 +138,16 @@
         width: 90vw;
     }
 
-    
+}
+
+@media screen and (max-width: 500px)
+{ 
+
+    #categorie-name {
+        font-size: 19px;
+    }
+    #categorie-card-text > p {
+        font-size: 14px;
+    }
 
 }

@@ -1,10 +1,8 @@
 import { TbArrowLeft, TbArrowRight} from 'react-icons/tb';
-import { CiHeart } from "react-icons/ci";
-import { LuArrowRightLeft } from "react-icons/lu";
-import { FaRegEye, FaShoppingCart } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
 import { newProducts, computadores, product, celulares, cameras, acessorios } from '../../helpers/items';
 import './products.css';
+import Card from '../card/card';
 
 export default function Products() {
   const [categorie, setCategorie] = useState('')
@@ -12,7 +10,7 @@ export default function Products() {
   const carrousel = useRef<HTMLDivElement>(null);
 
 
-  const test = () => {
+  const categorieType = () => {
     if(carrousel.current) {
       carrousel.current.scrollLeft = 0
     }
@@ -37,34 +35,22 @@ export default function Products() {
 
   const handleLeftClick = () : void => {
     const card : HTMLElement | null = document.getElementById('item-card');
-    const cardBox : HTMLElement | null = document.getElementById('itens-container');
-    const test =  cardBox?.lastChild
-    const test2 =  cardBox?.firstChild
-    if (carrousel.current && card && test && test2) {
+    if (carrousel.current && card) {
       carrousel.current.scrollLeft -= (card?.offsetWidth + 30);
-      // setMargin(margin -= (card?.offsetWidth + 30))
-      // cardBox.insertBefore(test, test2)
     }
     
   }
 
   const handleRightClick = () : void => {
     const card : HTMLElement | null = document.getElementById('item-card');
-    const cardBox : HTMLElement | null = document.getElementById('itens-container');
-    console.log(categorie);
-    
-    const test =  cardBox?.firstChild
-    
-    if (carrousel.current && card && test && cardBox) {
+    if (carrousel.current && card ) {
       carrousel.current.scrollLeft += (card.offsetWidth + 32);
-      // setMargin(carrousel.current.scrollLeft += (card.offsetWidth + 32))
-      // cardBox.appendChild(test)
     }
     
   }
 
   useEffect(() => {
-    test()
+    categorieType()
   }, [categorie])
 
   return (
@@ -85,32 +71,7 @@ export default function Products() {
         {list
           .map((product, i) => {
             return (
-              
-              <div id='item-card-box' key={i + 1}>
-                <div id='item-card' >
-                  <img id='product-image' src={product.img} alt={product.name} />
-                  <div id='card-text-box'>
-                    <p>Categoria</p>
-                    <h2 className='product-name'>{product.name}</h2>
-                    <p className='card-price'>R$ {product.price.toFixed(2)}</p>
-                  </div>
-                  <div id='card-icons-box'>
-                    <div className='icon-box'>
-                      <CiHeart className='card-icons' style={{ padding: '10px', margin: '5px'}} />
-                    </div>
-                    <div className='icon-box'>
-                      <LuArrowRightLeft className='card-icons' style={{ padding: '10px', margin: '5px'}} />
-                    </div>
-                    <div className='icon-box'>
-                      <FaRegEye className='card-icons' style={{ padding: '10px', margin: '5px'}} />
-                    </div>
-                  </div>
-                </div>
-                  <div id='hidden-cart-box'>
-                    
-                    <button><FaShoppingCart id='button-icon'/><p>+ CARRINHO</p></button>
-                  </div>
-              </div>
+              <Card image={product.img} name={product.name} price={product.price} i={i} />
             )
         })}
       </div>
