@@ -359,4 +359,12 @@
         font-size: 18px;
         padding: 34px 5px;
     }
+
+    #responsive-menu {
+        width: 55vw;
+    }
+
+    #menu-mask {
+        width: 45vw;
+    }
 }
