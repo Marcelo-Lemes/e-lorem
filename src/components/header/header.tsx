@@ -6,6 +6,7 @@ import './header.css';
 
 export default function Header() {
   const [menu, setMenu] = useState(false)
+
   return (
     <header id='header'>
       <div id="search-mask">
@@ -14,7 +15,7 @@ export default function Header() {
             {/* <h2 style={{color: 'white', fontSize: '50px'}}>E-Lorem</h2> */}
             <img id="logo" src="e-lorem-2a.png" alt="logotipo do site" />
             <div id='search-bar'>
-              <select name="categorie" id="">
+              <select name="categorie" aria-label="categorie types">
                 <option value="Categoria1">Todas Categorias</option>
                 <option value="Categoria2">Computadores</option>
                 <option value="Categoria3">Celulares</option>

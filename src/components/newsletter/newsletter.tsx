@@ -17,13 +17,13 @@ export default function Newsletter() {
           <button><IoMdMail style={{marginBottom: '-3px', marginRight: '5px'}} />Inscreva-se</button>
         </div>
         <div id='social-icons-box'>
-          <button className="icon-button">
+          <button className="icon-button" aria-label='facebook button'>
             <FaFacebookF />
           </button>
-          <button className="icon-button">
+          <button className="icon-button" aria-label='twitter button'>
             <FaTwitter />
           </button>
-          <button className="icon-button">
+          <button className="icon-button" aria-label='instagram button'>
             <FaInstagram />
           </button>
         </div>

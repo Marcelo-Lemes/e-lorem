@@ -168,7 +168,7 @@
 }
 
 #responsive-menu-box {
-    display: flex;
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -237,6 +237,9 @@
 
 @media screen and (max-width: 1300px)
 {
+    #responsive-menu-box {
+        display: flex;
+    }
     #search-bar > select {
         padding-top: 1px;
     }
